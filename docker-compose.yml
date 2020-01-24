@@ -1,29 +1,19 @@
-version: '3'
+version: "3"
 
 services:
-  api:
-    build: ./serveur
-    restart: always
-    ports: 
-      - "8080:8080"
-    volumes: 
-      - ./api:/api
-      - /api/node_modules
-    depends_on: 
-      - mongodb
-    networks:
-      - webappnetwork
-  client_web:
-    build: ./web
-    restart: always
-    ports:
-    - "8081:8081"
-    volumes:
-    - ./web:/web
-    - /web/node_modules
-    networks:
-      - webappnetwork
-
-networks:
-  webappnetwork:
-    driver: bridge
+    nodeserver:
+        build: ./server
+        ports:
+            - "8080:8080"
+    frontend:
+        build: ./web-client
+        ports:
+            - "8081:8081"
+        volumes:
+            - static-content:/home/
+    # mobile:
+    #     build: ./mobile-client
+    #     volumes:
+    #       - static-content:/home/android/
+volumes:
+     static-content:
