@@ -1,0 +1,45 @@
+.DisconnectModal {
+  display: flex;
+  margin-top: 100px;
+  border: 1px;
+  border-width: 20px;
+  border-radius: 100px;
+}
+
+.DisconnectHeadMod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #18181b;
+  color: #eeeef0;
+}
+
+.DisconnectBodyMod {
+  background-color: rgb(63, 63, 63);
+  /* padding: 0px 0px 0px 0px; */
+}
+
+.DisconnectFootMod {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.DisconnectServiceCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #a970fd;
+  background-color: #18181b;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+.logoMod {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
