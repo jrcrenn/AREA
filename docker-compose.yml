@@ -1,0 +1,59 @@
+version: '3'
+services:
+  client_web:
+    container_name: 'area_web_client'
+    build:
+      context: ./web_client
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8081'
+    environment:
+      - PORT=8081
+    volumes:
+      - 'apk-volume:/var/lib/apk/'
+    depends_on:
+      - client_mobile
+      - server
+    restart: always
+  client_mobile:
+    container_name: 'area_mobile_client'
+    volumes:
+      - 'apk-volume:/home/cirrus/apk'
+    build:
+      context: ./mobile_client
+      dockerfile: Dockerfile
+  server:
+      image: area_server:v0
+      build:
+          context: server/
+      depends_on:
+        - db
+      environment:
+          DB_HOST: db
+          DB_PORT: 27017
+          DB_NAME: area
+      networks:
+        - server_net
+      ports:
+        - "36969:36969"
+      restart: always
+  db:
+      image: mongo
+      restart: always
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: area
+        MONGO_INITDB_ROOT_PASSWORD: area
+        MONGO_INITDB_DATABASE: area
+      volumes:
+        - "dbdata:/data/db"
+      networks:
+        - server_net
+      restart: always
+
+
+networks:
+  server_net:
+
+volumes:
+  apk-volume:
+  dbdata:
