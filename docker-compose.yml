@@ -1,27 +1,59 @@
-version: '3.3'
+version: "3"
 
 services:
-  api:
-    build: ./api
-    restart: always
-    ports: 
-      - "3000:3000"
-    volumes: 
-      - ./api:/api
-      - /api/node_modules
-    networks:
-      - webappnetwork
-  client_web:
-    build: ./web
+  server:
+    build: "./serveur/areaAPI/"
     restart: always
     ports:
-    - 8080:8080
-    volumes:
-    - ./web:/web
-    - /web/node_modules
+      - "8080:8080"
     networks:
-      - webappnetwork
+      - back-net
+    environment:
+      - DB_HOST=db
+      - PORT=8080
+    depends_on:
+      - db
+  timer:
+    build: "./serveur/timerService/"
+    restart: always
+    networks:
+      - back-net
+    depends_on:
+      - db
+  db:
+    build: "./serveur/db/"
+    restart: always
+    networks:
+      - back-net
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - DB_PORT=5432
+
+  frontend:
+    build: "./client_web"
+    restart: always
+    depends_on:
+      - client_mobile
+    ports:
+      - "8081:3000"
+    networks:
+      - back-net
+    volumes:
+      - apk:/mobile_app/
+
+  client_mobile:
+    build: './client_mobile'
+    volumes:
+      - apk:/mobile_app/
+    
 
 networks:
-  webappnetwork:
+  back-net:
     driver: bridge
+
+volumes:
+  apk:
+  db-data:

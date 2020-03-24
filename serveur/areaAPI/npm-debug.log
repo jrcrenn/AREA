@@ -1,0 +1,951 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'dotenv',
+1 verbose cli   'simple-oauth2',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'dotenv', null ]
+6 verbose cache add name=undefined spec="dotenv" args=["dotenv",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'dotenv',
+7 verbose parsed url   path: 'dotenv',
+7 verbose parsed url   href: 'dotenv' }
+8 verbose cache add [ 'simple-oauth2', null ]
+9 verbose cache add name=undefined spec="simple-oauth2" args=["simple-oauth2",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'simple-oauth2',
+10 verbose parsed url   path: 'simple-oauth2',
+10 verbose parsed url   href: 'simple-oauth2' }
+11 silly lockFile 4de95cba-dotenv dotenv
+12 verbose lock dotenv /root/.npm/4de95cba-dotenv.lock
+13 silly lockFile 8fd70594-simple-oauth2 simple-oauth2
+14 verbose lock simple-oauth2 /root/.npm/8fd70594-simple-oauth2.lock
+15 silly lockFile 4de95cba-dotenv dotenv
+16 silly lockFile 4de95cba-dotenv dotenv
+17 silly lockFile 8fd70594-simple-oauth2 simple-oauth2
+18 silly lockFile 8fd70594-simple-oauth2 simple-oauth2
+19 verbose addNamed [ 'dotenv', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 5104247f-dotenv dotenv@
+22 verbose lock dotenv@ /root/.npm/5104247f-dotenv.lock
+23 verbose addNamed [ 'simple-oauth2', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile ff92b3af-simple-oauth2 simple-oauth2@
+26 verbose lock simple-oauth2@ /root/.npm/ff92b3af-simple-oauth2.lock
+27 silly addNameRange { name: 'dotenv', range: '*', hasData: false }
+28 silly addNameRange { name: 'simple-oauth2', range: '*', hasData: false }
+29 verbose request where is /dotenv
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id c70288e773a82feb
+32 verbose url raw /dotenv
+33 verbose url resolving [ 'https://registry.npmjs.org/', './dotenv' ]
+34 verbose url resolved https://registry.npmjs.org/dotenv
+35 verbose request where is https://registry.npmjs.org/dotenv
+36 info trying registry request attempt 1 at 16:54:06
+37 verbose etag W/"3d1f8b5f5d612419b2caf49c6a87a706"
+38 http GET https://registry.npmjs.org/dotenv
+39 verbose request where is /simple-oauth2
+40 verbose request registry https://registry.npmjs.org/
+41 verbose url raw /simple-oauth2
+42 verbose url resolving [ 'https://registry.npmjs.org/', './simple-oauth2' ]
+43 verbose url resolved https://registry.npmjs.org/simple-oauth2
+44 verbose request where is https://registry.npmjs.org/simple-oauth2
+45 info trying registry request attempt 1 at 16:54:06
+46 verbose etag W/"d4d48c186bdb69476ad520973a945b75"
+47 http GET https://registry.npmjs.org/simple-oauth2
+48 http 304 https://registry.npmjs.org/dotenv
+49 silly registry.get cb [ 304,
+49 silly registry.get   { date: 'Mon, 10 Feb 2020 15:54:25 GMT',
+49 silly registry.get     connection: 'keep-alive',
+49 silly registry.get     'set-cookie': [ '__cfduid=d126cc6f2a5466b3b76d27f807c84d8c81581350065; expires=Wed, 11-Mar-20 15:54:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+49 silly registry.get     'cf-ray': '562f42f419aa6924-CDG',
+49 silly registry.get     age: '4257',
+49 silly registry.get     'cache-control': 'public, max-age=300',
+49 silly registry.get     etag: '"3d1f8b5f5d612419b2caf49c6a87a706"',
+49 silly registry.get     'last-modified': 'Sun, 01 Dec 2019 18:36:38 GMT',
+49 silly registry.get     vary: 'Accept-Encoding',
+49 silly registry.get     'cf-cache-status': 'HIT',
+49 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 silly registry.get     server: 'cloudflare' } ]
+50 verbose etag https://registry.npmjs.org/dotenv from cache
+51 http 304 https://registry.npmjs.org/simple-oauth2
+52 silly registry.get cb [ 304,
+52 silly registry.get   { date: 'Mon, 10 Feb 2020 15:54:25 GMT',
+52 silly registry.get     connection: 'keep-alive',
+52 silly registry.get     'set-cookie': [ '__cfduid=d5c83ffd0dbf48c5dd979fc3a4b2086871581350065; expires=Wed, 11-Mar-20 15:54:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+52 silly registry.get     'cf-ray': '562f42f41d67edbb-CDG',
+52 silly registry.get     age: '3734',
+52 silly registry.get     'cache-control': 'public, max-age=300',
+52 silly registry.get     etag: '"d4d48c186bdb69476ad520973a945b75"',
+52 silly registry.get     'last-modified': 'Wed, 29 Jan 2020 04:22:34 GMT',
+52 silly registry.get     vary: 'Accept-Encoding',
+52 silly registry.get     'cf-cache-status': 'HIT',
+52 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+52 silly registry.get     server: 'cloudflare' } ]
+53 verbose etag https://registry.npmjs.org/simple-oauth2 from cache
+54 silly addNameRange number 2 { name: 'dotenv', range: '*', hasData: true }
+55 silly addNameRange versions [ 'dotenv',
+55 silly addNameRange   [ '0.0.1',
+55 silly addNameRange     '0.0.2',
+55 silly addNameRange     '0.0.3',
+55 silly addNameRange     '0.0.4',
+55 silly addNameRange     '0.0.5',
+55 silly addNameRange     '0.1.0',
+55 silly addNameRange     '0.1.1',
+55 silly addNameRange     '0.1.2',
+55 silly addNameRange     '0.2.0',
+55 silly addNameRange     '0.2.1',
+55 silly addNameRange     '0.2.2',
+55 silly addNameRange     '0.2.3',
+55 silly addNameRange     '0.2.4',
+55 silly addNameRange     '0.2.5',
+55 silly addNameRange     '0.2.6',
+55 silly addNameRange     '0.2.7',
+55 silly addNameRange     '0.2.8',
+55 silly addNameRange     '0.3.0',
+55 silly addNameRange     '0.4.0',
+55 silly addNameRange     '0.5.0',
+55 silly addNameRange     '0.5.1',
+55 silly addNameRange     '1.0.0',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '2.0.0',
+55 silly addNameRange     '3.0.0',
+55 silly addNameRange     '4.0.0',
+55 silly addNameRange     '5.0.0',
+55 silly addNameRange     '5.0.1',
+55 silly addNameRange     '6.0.0',
+55 silly addNameRange     '6.1.0',
+55 silly addNameRange     '6.2.0-rc1',
+55 silly addNameRange     '6.2.0-0',
+55 silly addNameRange     '6.2.0',
+55 silly addNameRange     '7.0.0',
+55 silly addNameRange     '8.0.0',
+55 silly addNameRange     '8.1.0',
+55 silly addNameRange     '8.2.0' ] ]
+56 verbose addNamed [ 'dotenv', '8.2.0' ]
+57 verbose addNamed [ '8.2.0', '8.2.0' ]
+58 silly lockFile 11ce198e-dotenv-8-2-0 dotenv@8.2.0
+59 verbose lock dotenv@8.2.0 /root/.npm/11ce198e-dotenv-8-2-0.lock
+60 silly addNameRange number 2 { name: 'simple-oauth2', range: '*', hasData: true }
+61 silly addNameRange versions [ 'simple-oauth2',
+61 silly addNameRange   [ '0.1.0',
+61 silly addNameRange     '0.1.1',
+61 silly addNameRange     '0.1.2',
+61 silly addNameRange     '0.1.3',
+61 silly addNameRange     '0.1.4',
+61 silly addNameRange     '0.1.5',
+61 silly addNameRange     '0.1.6',
+61 silly addNameRange     '0.1.7',
+61 silly addNameRange     '0.1.8',
+61 silly addNameRange     '0.1.9',
+61 silly addNameRange     '0.2.0',
+61 silly addNameRange     '0.2.1',
+61 silly addNameRange     '0.3.0',
+61 silly addNameRange     '0.4.0',
+61 silly addNameRange     '0.5.0',
+61 silly addNameRange     '0.5.1',
+61 silly addNameRange     '0.6.0',
+61 silly addNameRange     '0.7.0',
+61 silly addNameRange     '0.8.0',
+61 silly addNameRange     '1.0.0',
+61 silly addNameRange     '1.0.1',
+61 silly addNameRange     '1.0.2',
+61 silly addNameRange     '1.0.3',
+61 silly addNameRange     '1.1.0',
+61 silly addNameRange     '1.2.0',
+61 silly addNameRange     '1.3.0',
+61 silly addNameRange     '1.4.0',
+61 silly addNameRange     '1.5.0',
+61 silly addNameRange     '1.5.1',
+61 silly addNameRange     '2.0.0',
+61 silly addNameRange     '2.0.1',
+61 silly addNameRange     '1.5.2',
+61 silly addNameRange     '1.6.0',
+61 silly addNameRange     '2.2.0',
+61 silly addNameRange     '2.2.1',
+61 silly addNameRange     '2.3.0',
+61 silly addNameRange     '2.4.0',
+61 silly addNameRange     '2.5.0',
+61 silly addNameRange     '2.5.1',
+61 silly addNameRange     '2.5.2',
+61 silly addNameRange     '3.0.0',
+61 silly addNameRange     '3.0.1',
+61 silly addNameRange     '3.1.0',
+61 silly addNameRange     '3.2.0',
+61 silly addNameRange     '3.3.0' ] ]
+62 verbose addNamed [ 'simple-oauth2', '3.3.0' ]
+63 verbose addNamed [ '3.3.0', '3.3.0' ]
+64 silly lockFile d0c01bc9-simple-oauth2-3-3-0 simple-oauth2@3.3.0
+65 verbose lock simple-oauth2@3.3.0 /root/.npm/d0c01bc9-simple-oauth2-3-3-0.lock
+66 silly lockFile 11ce198e-dotenv-8-2-0 dotenv@8.2.0
+67 silly lockFile 11ce198e-dotenv-8-2-0 dotenv@8.2.0
+68 silly lockFile d0c01bc9-simple-oauth2-3-3-0 simple-oauth2@3.3.0
+69 silly lockFile d0c01bc9-simple-oauth2-3-3-0 simple-oauth2@3.3.0
+70 silly lockFile 5104247f-dotenv dotenv@
+71 silly lockFile 5104247f-dotenv dotenv@
+72 silly lockFile ff92b3af-simple-oauth2 simple-oauth2@
+73 silly lockFile ff92b3af-simple-oauth2 simple-oauth2@
+74 silly resolved [ { name: 'dotenv',
+74 silly resolved     version: '8.2.0',
+74 silly resolved     description: 'Loads environment variables from .env file',
+74 silly resolved     main: 'lib/main.js',
+74 silly resolved     types: 'types',
+74 silly resolved     scripts:
+74 silly resolved      { flow: 'flow',
+74 silly resolved        dtslint: 'dtslint types',
+74 silly resolved        lint: 'standard',
+74 silly resolved        postlint: 'standard-markdown',
+74 silly resolved        pretest: 'npm run lint && npm run dtslint',
+74 silly resolved        test: 'tap tests/*.js --100',
+74 silly resolved        prerelease: 'npm test',
+74 silly resolved        release: 'standard-version' },
+74 silly resolved     repository: { type: 'git', url: 'git://github.com/motdotla/dotenv.git' },
+74 silly resolved     keywords:
+74 silly resolved      [ 'dotenv',
+74 silly resolved        'env',
+74 silly resolved        '.env',
+74 silly resolved        'environment',
+74 silly resolved        'variables',
+74 silly resolved        'config',
+74 silly resolved        'settings' ],
+74 silly resolved     license: 'BSD-2-Clause',
+74 silly resolved     devDependencies:
+74 silly resolved      { decache: '^4.5.1',
+74 silly resolved        dtslint: '^0.9.8',
+74 silly resolved        'flow-bin': '^0.109.0',
+74 silly resolved        sinon: '^7.5.0',
+74 silly resolved        standard: '^13.1.0',
+74 silly resolved        'standard-markdown': '^5.1.0',
+74 silly resolved        'standard-version': '^7.0.0',
+74 silly resolved        tap: '^14.7.0' },
+74 silly resolved     dependencies: {},
+74 silly resolved     engines: { node: '>=8' },
+74 silly resolved     standard: { ignore: [Object] },
+74 silly resolved     gitHead: '70425a9c88e5fe5c3bd128fa973701279a76a9e3',
+74 silly resolved     bugs: { url: 'https://github.com/motdotla/dotenv/issues' },
+74 silly resolved     homepage: 'https://github.com/motdotla/dotenv#readme',
+74 silly resolved     _id: 'dotenv@8.2.0',
+74 silly resolved     _nodeVersion: '10.16.3',
+74 silly resolved     _npmVersion: '6.11.3',
+74 silly resolved     dist:
+74 silly resolved      { integrity: 'sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==',
+74 silly resolved        shasum: '97e619259ada750eea3e4ea3e26bceea5424b16a',
+74 silly resolved        tarball: 'https://registry.npmjs.org/dotenv/-/dotenv-8.2.0.tgz',
+74 silly resolved        fileCount: 12,
+74 silly resolved        unpackedSize: 23061,
+74 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdpnd2CRA9TVsSAnZWagAAnK8P/RJNhxy4LSvRnWbNvk5r\nD2LJkZCMZgxxyirUwr0RQRdpSjoHISNYb6/JsUqCgEzJPcfTiCCQbLcEFm+a\nHOO4Uicp7MQ822sORW22UOL7u+AMA7oXOS3zZWWOLsjtcwYuHmE8QGFmJXe6\nFGIH05AG+PVnexopK+1Q6zVnCT/luVfHGTBXqu3fhmir/ka3Kxl2QN7fLsTh\nRzATctTAjH0sQ1bgUuXrp1r5EsY7HG4RCas/liCyqi/KVRnHtOsQsnud6ANa\nIy6jxvpR6+mwAF6Bm3CjmxOUJvirt6ghOR/+38e/uYYJWoe+sKxqq1XBIK6x\nGA3rtgPFaOO/sWMCZDsNoyeonQPIaTkmy4GFvyrjEy0Xu0GoeDucqQV0gNVS\nLEmSbUFl0G3fSzm2zfeHfzA9LvptBtud2GZVy+EfCmv/XW5B86jcMWdyE9Fu\npexATmGLm6ZY2i6KH/hCi7w23XHx07dd+jq1jlJsduyn12Ei6QcUeS1ureYF\n9IjrX7dr1gfedKj/rH3Zkn83TFagL19k4+IDDmh2j4ImGaWHX1QTXiLSUBnd\nlqZexvNPpsf+PrkdcZX1jdqS6Re8qz5MrwDWuUC1GAMyz/EZUHpSN2XdVOm3\nRPxlOveyiZW1gjDxwAgCjrF24eIgz9Cx9X8ZivORYK4RAj6qgzBbGnczgWXt\n4Bd4\r\n=LLKe\r\n-----END PGP SIGNATURE-----\r\n' },
+74 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+74 silly resolved     _npmUser: { name: 'maxbeatty', email: 'npm@maxbeatty.com' },
+74 silly resolved     directories: {},
+74 silly resolved     _npmOperationalInternal:
+74 silly resolved      { host: 's3://npm-registry-packages',
+74 silly resolved        tmp: 'tmp/dotenv_8.2.0_1571190645866_0.7378423275144708' },
+74 silly resolved     _hasShrinkwrap: false,
+74 silly resolved     _shasum: '97e619259ada750eea3e4ea3e26bceea5424b16a',
+74 silly resolved     _from: 'dotenv@',
+74 silly resolved     _resolved: 'https://registry.npmjs.org/dotenv/-/dotenv-8.2.0.tgz',
+74 silly resolved     readme: 'ERROR: No README data found!' },
+74 silly resolved   { name: 'simple-oauth2',
+74 silly resolved     version: '3.3.0',
+74 silly resolved     description: 'Node.js client for OAuth2',
+74 silly resolved     author: { name: 'Andrea Reginato', email: 'andrea.reginato@gmail.com' },
+74 silly resolved     contributors: [ [Object] ],
+74 silly resolved     license: 'Apache-2.0',
+74 silly resolved     homepage: 'https://github.com/lelylan/simple-oauth2',
+74 silly resolved     main: 'index.js',
+74 silly resolved     repository:
+74 silly resolved      { type: 'git',
+74 silly resolved        url: 'git+https://github.com/lelylan/simple-oauth2.git' },
+74 silly resolved     engine: { node: '>=8' },
+74 silly resolved     scripts:
+74 silly resolved      { pretest: 'npm run lint',
+74 silly resolved        test: 'nyc ava',
+74 silly resolved        lint: 'eslint .',
+74 silly resolved        'docs-gen': 'doctoc README.md --github --no-title',
+74 silly resolved        'clean-install': 'rm -rf node_modules && npm install' },
+74 silly resolved     nyc:
+74 silly resolved      { 'check-coverage': true,
+74 silly resolved        lines: 100,
+74 silly resolved        statements: 100,
+74 silly resolved        functions: 100,
+74 silly resolved        branches: 100,
+74 silly resolved        reporter: [Object] },
+74 silly resolved     keywords: [ 'oauth2', 'authorization', 'password', 'client', 'credentials' ],
+74 silly resolved     dependencies:
+74 silly resolved      { '@hapi/hoek': '^8.5.0',
+74 silly resolved        '@hapi/joi': '^16.1.8',
+74 silly resolved        '@hapi/wreck': '^15.1.0',
+74 silly resolved        'date-fns': '^2.9.0',
+74 silly resolved        debug: '^4.1.1' },
+74 silly resolved     devDependencies:
+74 silly resolved      { '@hapi/boom': '^8.0.1',
+74 silly resolved        ava: '^3.1.0',
+74 silly resolved        chance: '^1.1.4',
+74 silly resolved        'chance-access-token': '^2.0.0',
+74 silly resolved        doctoc: '^1.4.0',
+74 silly resolved        eslint: '^6.8.0',
+74 silly resolved        'eslint-config-airbnb-base': '^14.0.0',
+74 silly resolved        'eslint-plugin-import': '^2.20.0',
+74 silly resolved        nock: '^11.7.2',
+74 silly resolved        nyc: '^15.0.0' },
+74 silly resolved     gitHead: '5086d330c52472c6f97ffdaca3594e36845d23de',
+74 silly resolved     bugs: { url: 'https://github.com/lelylan/simple-oauth2/issues' },
+74 silly resolved     _id: 'simple-oauth2@3.3.0',
+74 silly resolved     _nodeVersion: '12.14.1',
+74 silly resolved     _npmVersion: '6.13.4',
+74 silly resolved     dist:
+74 silly resolved      { integrity: 'sha512-mBWkLHH7XY6WSy271j6CeEHuGN61K/TeUawXpX0K9tsLnlrqt9bpXYR/tYMI6+o6QWqSdvVaItGlZKOfMVFOGA==',
+74 silly resolved        shasum: 'c97c48a809669d6f303b166397ba925a25474215',
+74 silly resolved        tarball: 'https://registry.npmjs.org/simple-oauth2/-/simple-oauth2-3.3.0.tgz',
+74 silly resolved        fileCount: 12,
+74 silly resolved        unpackedSize: 35132,
+74 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeMQiHCRA9TVsSAnZWagAA704P/jwAMRXNFRUb68SVEIEQ\nuemqBK3ck0uDb9FanefL/IJ1m2Jh54gVgzOg/cAFLp8sIxVrjvx59FHZJ8HG\nr8TuCBB2MCPSAMBzWhlGj+zFbSvkgppDVv8cZPPB/I6Wjn5x3C4UXLaBLEOC\nQROyJiS3gDmUF/s2nMukbUGKCl0fzJX5gzY+4To1jC/35Xu4tT9kKsa2GGyi\nnZFuQ23X8ZIUaq2+JY3rmJ+Q9uA0X/tpRu1DGbvlJ2OgOpKUUXrbpRTxP43N\nslbdq63bY6sGKiG8afkxNCurPP2oF97iCb6QTI1FvIFE8jfmA/yPSls4k6tj\n2/bV3vtU+dZWHnfwbRS3873GaJYx2VpC7/hRKhZio4EpIHxd0wNClzlqPuik\nODPXTBR74mjkHlbvXxW3ClVTcooBaxJGgBVc4bAejaHOpBBMQGvLKMH38MhQ\ngWIXC1Ygh3lz4xR1osP326Ccwwh556j/p4kEA4p5KS1WS0nMgABI+6YeDoL8\nE/oyvv97wDfAGiONvPoBNkL4aEl9ac0InYezun2igIRUjGu+HZebNps2KadD\nd2mJ+uN7okSa8xOPIJzEGLZdyR/da77toeZgOKj+m223Ox45G+TA3TBs9KBo\nUzWXnSjSrMNMUuxX4mB7afVSW9FumxMObsB7nRiiDQiCefZL4KI15aMOeyEr\nYapc\r\n=ZNqm\r\n-----END PGP SIGNATURE-----\r\n' },
+74 silly resolved     maintainers: [ [Object], [Object] ],
+74 silly resolved     _npmUser: { name: 'jonathansamines', email: 'jn.samines@gmail.com' },
+74 silly resolved     directories: {},
+74 silly resolved     _npmOperationalInternal:
+74 silly resolved      { host: 's3://npm-registry-packages',
+74 silly resolved        tmp: 'tmp/simple-oauth2_3.3.0_1580271750315_0.034333038415853556' },
+74 silly resolved     _hasShrinkwrap: false,
+74 silly resolved     _shasum: 'c97c48a809669d6f303b166397ba925a25474215',
+74 silly resolved     _from: 'simple-oauth2@',
+74 silly resolved     _resolved: 'https://registry.npmjs.org/simple-oauth2/-/simple-oauth2-3.3.0.tgz',
+74 silly resolved     readme: 'ERROR: No README data found!' } ]
+75 info install dotenv@8.2.0 into /root/DEV_area_2019/serveur/areaAPI
+76 info install simple-oauth2@3.3.0 into /root/DEV_area_2019/serveur/areaAPI
+77 info installOne dotenv@8.2.0
+78 warn engine dotenv@8.2.0: wanted: {"node":">=8"} (current: {"node":"0.10.29","npm":"1.4.21"})
+79 info installOne simple-oauth2@3.3.0
+80 verbose node_modules/simple-oauth2 unbuild
+81 verbose node_modules/dotenv unbuild
+82 info preuninstall dotenv@8.2.0
+83 info uninstall dotenv@8.2.0
+84 verbose tar unpack /root/.npm/simple-oauth2/3.3.0/package.tgz
+85 silly lockFile a8e55f33-eaAPI-node-modules-simple-oauth2 tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/simple-oauth2
+86 verbose lock tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/simple-oauth2 /root/.npm/a8e55f33-eaAPI-node-modules-simple-oauth2.lock
+87 silly lockFile 7de44be5--simple-oauth2-3-3-0-package-tgz tar:///root/.npm/simple-oauth2/3.3.0/package.tgz
+88 verbose lock tar:///root/.npm/simple-oauth2/3.3.0/package.tgz /root/.npm/7de44be5--simple-oauth2-3-3-0-package-tgz.lock
+89 verbose true,/root/DEV_area_2019/serveur/areaAPI/node_modules,/root/DEV_area_2019/serveur/areaAPI/node_modules unbuild dotenv@8.2.0
+90 info postuninstall dotenv@8.2.0
+91 silly gunzTarPerm modes [ '755', '644' ]
+92 silly gunzTarPerm extractEntry lib/access-token.js
+93 silly gunzTarPerm extractEntry lib/grants/authorization-code.js
+94 silly gunzTarPerm extractEntry lib/grants/client-credentials.js
+95 verbose tar unpack /root/.npm/dotenv/8.2.0/package.tgz
+96 silly lockFile 901adb9e-veur-areaAPI-node-modules-dotenv tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv
+97 verbose lock tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv /root/.npm/901adb9e-veur-areaAPI-node-modules-dotenv.lock
+98 silly lockFile 5aa518b4-oot-npm-dotenv-8-2-0-package-tgz tar:///root/.npm/dotenv/8.2.0/package.tgz
+99 verbose lock tar:///root/.npm/dotenv/8.2.0/package.tgz /root/.npm/5aa518b4-oot-npm-dotenv-8-2-0-package-tgz.lock
+100 silly gunzTarPerm modes [ '755', '644' ]
+101 silly gunzTarPerm extractEntry LICENSE
+102 silly gunzTarPerm extractEntry lib/cli-options.js
+103 silly gunzTarPerm extractEntry config.js
+104 silly gunzTarPerm extractEntry lib/client.js
+105 silly gunzTarPerm extractEntry lib/encoding.js
+106 silly gunzTarPerm extractEntry lib/env-options.js
+107 silly gunzTarPerm extractEntry lib/main.js
+108 silly gunzTarPerm extractEntry lib/grant-params.js
+109 silly gunzTarPerm extractEntry index.js
+110 silly gunzTarPerm extractEntry package.json
+111 silly gunzTarPerm extractEntry types/tsconfig.json
+112 silly gunzTarPerm extractEntry lib/grants/password-owner.js
+113 silly gunzTarPerm extractEntry types/tslint.json
+114 silly gunzTarPerm extractEntry CHANGELOG.md
+115 silly gunzTarPerm extractEntry lib/request-options.js
+116 silly gunzTarPerm extractEntry package.json
+117 silly gunzTarPerm extractEntry README.md
+118 silly gunzTarPerm extractEntry CHANGELOG.md
+119 silly gunzTarPerm extractEntry README.md
+120 silly gunzTarPerm extractEntry types/index.d.ts
+121 silly gunzTarPerm extractEntry types/test.ts
+122 silly lockFile 901adb9e-veur-areaAPI-node-modules-dotenv tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv
+123 silly lockFile 901adb9e-veur-areaAPI-node-modules-dotenv tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv
+124 silly lockFile 5aa518b4-oot-npm-dotenv-8-2-0-package-tgz tar:///root/.npm/dotenv/8.2.0/package.tgz
+125 silly lockFile 5aa518b4-oot-npm-dotenv-8-2-0-package-tgz tar:///root/.npm/dotenv/8.2.0/package.tgz
+126 info preinstall dotenv@8.2.0
+127 verbose readDependencies using package.json deps
+128 verbose readDependencies using package.json deps
+129 silly resolved []
+130 verbose about to build /root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv
+131 info build /root/DEV_area_2019/serveur/areaAPI/node_modules/dotenv
+132 verbose linkStuff [ false,
+132 verbose linkStuff   false,
+132 verbose linkStuff   false,
+132 verbose linkStuff   '/root/DEV_area_2019/serveur/areaAPI/node_modules' ]
+133 info linkStuff dotenv@8.2.0
+134 verbose linkBins dotenv@8.2.0
+135 verbose linkMans dotenv@8.2.0
+136 verbose rebuildBundles dotenv@8.2.0
+137 info install dotenv@8.2.0
+138 silly lockFile a8e55f33-eaAPI-node-modules-simple-oauth2 tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/simple-oauth2
+139 silly lockFile a8e55f33-eaAPI-node-modules-simple-oauth2 tar:///root/DEV_area_2019/serveur/areaAPI/node_modules/simple-oauth2
+140 silly lockFile 7de44be5--simple-oauth2-3-3-0-package-tgz tar:///root/.npm/simple-oauth2/3.3.0/package.tgz
+141 silly lockFile 7de44be5--simple-oauth2-3-3-0-package-tgz tar:///root/.npm/simple-oauth2/3.3.0/package.tgz
+142 info postinstall dotenv@8.2.0
+143 info preinstall simple-oauth2@3.3.0
+144 verbose readDependencies using package.json deps
+145 verbose readDependencies using package.json deps
+146 verbose cache add [ '@hapi/hoek@^8.5.0', null ]
+147 verbose cache add name=undefined spec="@hapi/hoek@^8.5.0" args=["@hapi/hoek@^8.5.0",null]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: '@hapi/hoek@^8.5.0',
+148 verbose parsed url   path: '@hapi/hoek@^8.5.0',
+148 verbose parsed url   href: '@hapi/hoek@^8.5.0' }
+149 verbose cache add [ '@hapi/joi@^16.1.8', null ]
+150 verbose cache add name=undefined spec="@hapi/joi@^16.1.8" args=["@hapi/joi@^16.1.8",null]
+151 verbose parsed url { protocol: null,
+151 verbose parsed url   slashes: null,
+151 verbose parsed url   auth: null,
+151 verbose parsed url   host: null,
+151 verbose parsed url   port: null,
+151 verbose parsed url   hostname: null,
+151 verbose parsed url   hash: null,
+151 verbose parsed url   search: null,
+151 verbose parsed url   query: null,
+151 verbose parsed url   pathname: '@hapi/joi@^16.1.8',
+151 verbose parsed url   path: '@hapi/joi@^16.1.8',
+151 verbose parsed url   href: '@hapi/joi@^16.1.8' }
+152 verbose cache add [ 'debug@^4.1.1', null ]
+153 verbose cache add name=undefined spec="debug@^4.1.1" args=["debug@^4.1.1",null]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: 'debug@^4.1.1',
+154 verbose parsed url   path: 'debug@^4.1.1',
+154 verbose parsed url   href: 'debug@^4.1.1' }
+155 verbose cache add [ '@hapi/wreck@^15.1.0', null ]
+156 verbose cache add name=undefined spec="@hapi/wreck@^15.1.0" args=["@hapi/wreck@^15.1.0",null]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: '@hapi/wreck@^15.1.0',
+157 verbose parsed url   path: '@hapi/wreck@^15.1.0',
+157 verbose parsed url   href: '@hapi/wreck@^15.1.0' }
+158 verbose cache add name="" spec="hapi/hoek@^8.5.0" args=["","hapi/hoek@^8.5.0"]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: 'hapi/hoek@^8.5.0',
+159 verbose parsed url   path: 'hapi/hoek@^8.5.0',
+159 verbose parsed url   href: 'hapi/hoek@^8.5.0' }
+160 verbose cache add name="" spec="hapi/joi@^16.1.8" args=["","hapi/joi@^16.1.8"]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: 'hapi/joi@^16.1.8',
+161 verbose parsed url   path: 'hapi/joi@^16.1.8',
+161 verbose parsed url   href: 'hapi/joi@^16.1.8' }
+162 verbose cache add name="debug" spec="^4.1.1" args=["debug","^4.1.1"]
+163 verbose parsed url { protocol: null,
+163 verbose parsed url   slashes: null,
+163 verbose parsed url   auth: null,
+163 verbose parsed url   host: null,
+163 verbose parsed url   port: null,
+163 verbose parsed url   hostname: null,
+163 verbose parsed url   hash: null,
+163 verbose parsed url   search: null,
+163 verbose parsed url   query: null,
+163 verbose parsed url   pathname: '^4.1.1',
+163 verbose parsed url   path: '^4.1.1',
+163 verbose parsed url   href: '^4.1.1' }
+164 verbose addNamed [ 'debug', '^4.1.1' ]
+165 verbose addNamed [ null, '>=4.1.1-0 <5.0.0-0' ]
+166 silly lockFile a9221a8c-debug-4-1-1 debug@^4.1.1
+167 verbose lock debug@^4.1.1 /root/.npm/a9221a8c-debug-4-1-1.lock
+168 verbose cache add name="" spec="hapi/wreck@^15.1.0" args=["","hapi/wreck@^15.1.0"]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: 'hapi/wreck@^15.1.0',
+169 verbose parsed url   path: 'hapi/wreck@^15.1.0',
+169 verbose parsed url   href: 'hapi/wreck@^15.1.0' }
+170 verbose cache add [ 'date-fns@^2.9.0', null ]
+171 verbose cache add name=undefined spec="date-fns@^2.9.0" args=["date-fns@^2.9.0",null]
+172 verbose parsed url { protocol: null,
+172 verbose parsed url   slashes: null,
+172 verbose parsed url   auth: null,
+172 verbose parsed url   host: null,
+172 verbose parsed url   port: null,
+172 verbose parsed url   hostname: null,
+172 verbose parsed url   hash: null,
+172 verbose parsed url   search: null,
+172 verbose parsed url   query: null,
+172 verbose parsed url   pathname: 'date-fns@^2.9.0',
+172 verbose parsed url   path: 'date-fns@^2.9.0',
+172 verbose parsed url   href: 'date-fns@^2.9.0' }
+173 verbose cache add name="hapi/hoek" spec="^8.5.0" args=["hapi/hoek","^8.5.0"]
+174 verbose parsed url { protocol: null,
+174 verbose parsed url   slashes: null,
+174 verbose parsed url   auth: null,
+174 verbose parsed url   host: null,
+174 verbose parsed url   port: null,
+174 verbose parsed url   hostname: null,
+174 verbose parsed url   hash: null,
+174 verbose parsed url   search: null,
+174 verbose parsed url   query: null,
+174 verbose parsed url   pathname: '^8.5.0',
+174 verbose parsed url   path: '^8.5.0',
+174 verbose parsed url   href: '^8.5.0' }
+175 verbose addNamed [ 'hapi/hoek', '^8.5.0' ]
+176 verbose addNamed [ null, '>=8.5.0-0 <9.0.0-0' ]
+177 silly lockFile 60237123-hapi-hoek-8-5-0 hapi/hoek@^8.5.0
+178 verbose lock hapi/hoek@^8.5.0 /root/.npm/60237123-hapi-hoek-8-5-0.lock
+179 verbose cache add name="hapi/joi" spec="^16.1.8" args=["hapi/joi","^16.1.8"]
+180 verbose parsed url { protocol: null,
+180 verbose parsed url   slashes: null,
+180 verbose parsed url   auth: null,
+180 verbose parsed url   host: null,
+180 verbose parsed url   port: null,
+180 verbose parsed url   hostname: null,
+180 verbose parsed url   hash: null,
+180 verbose parsed url   search: null,
+180 verbose parsed url   query: null,
+180 verbose parsed url   pathname: '^16.1.8',
+180 verbose parsed url   path: '^16.1.8',
+180 verbose parsed url   href: '^16.1.8' }
+181 verbose addNamed [ 'hapi/joi', '^16.1.8' ]
+182 verbose addNamed [ null, '>=16.1.8-0 <17.0.0-0' ]
+183 silly lockFile cc84a4e1-hapi-joi-16-1-8 hapi/joi@^16.1.8
+184 verbose lock hapi/joi@^16.1.8 /root/.npm/cc84a4e1-hapi-joi-16-1-8.lock
+185 verbose cache add name="hapi/wreck" spec="^15.1.0" args=["hapi/wreck","^15.1.0"]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: '^15.1.0',
+186 verbose parsed url   path: '^15.1.0',
+186 verbose parsed url   href: '^15.1.0' }
+187 verbose addNamed [ 'hapi/wreck', '^15.1.0' ]
+188 verbose addNamed [ null, '>=15.1.0-0 <16.0.0-0' ]
+189 silly lockFile 3e80c5a9-hapi-wreck-15-1-0 hapi/wreck@^15.1.0
+190 verbose lock hapi/wreck@^15.1.0 /root/.npm/3e80c5a9-hapi-wreck-15-1-0.lock
+191 verbose cache add name="date-fns" spec="^2.9.0" args=["date-fns","^2.9.0"]
+192 verbose parsed url { protocol: null,
+192 verbose parsed url   slashes: null,
+192 verbose parsed url   auth: null,
+192 verbose parsed url   host: null,
+192 verbose parsed url   port: null,
+192 verbose parsed url   hostname: null,
+192 verbose parsed url   hash: null,
+192 verbose parsed url   search: null,
+192 verbose parsed url   query: null,
+192 verbose parsed url   pathname: '^2.9.0',
+192 verbose parsed url   path: '^2.9.0',
+192 verbose parsed url   href: '^2.9.0' }
+193 verbose addNamed [ 'date-fns', '^2.9.0' ]
+194 verbose addNamed [ null, '>=2.9.0-0 <3.0.0-0' ]
+195 silly lockFile 5cebe071-date-fns-2-9-0 date-fns@^2.9.0
+196 verbose lock date-fns@^2.9.0 /root/.npm/5cebe071-date-fns-2-9-0.lock
+197 silly addNameRange { name: 'debug', range: '>=4.1.1-0 <5.0.0-0', hasData: false }
+198 silly addNameRange { name: 'hapi/hoek',
+198 silly addNameRange   range: '>=8.5.0-0 <9.0.0-0',
+198 silly addNameRange   hasData: false }
+199 silly addNameRange { name: 'hapi/joi',
+199 silly addNameRange   range: '>=16.1.8-0 <17.0.0-0',
+199 silly addNameRange   hasData: false }
+200 silly addNameRange { name: 'hapi/wreck',
+200 silly addNameRange   range: '>=15.1.0-0 <16.0.0-0',
+200 silly addNameRange   hasData: false }
+201 silly addNameRange { name: 'date-fns', range: '>=2.9.0-0 <3.0.0-0', hasData: false }
+202 verbose request where is /debug
+203 verbose request registry https://registry.npmjs.org/
+204 verbose url raw /debug
+205 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+206 verbose url resolved https://registry.npmjs.org/debug
+207 verbose request where is https://registry.npmjs.org/debug
+208 info trying registry request attempt 1 at 16:54:07
+209 verbose etag W/"31caef075876be8ad89cf9586cd2b5d9"
+210 http GET https://registry.npmjs.org/debug
+211 verbose request where is /hapi/hoek
+212 verbose request registry https://registry.npmjs.org/
+213 verbose url raw /hapi/hoek
+214 verbose url resolving [ 'https://registry.npmjs.org/', './hapi/hoek' ]
+215 verbose url resolved https://registry.npmjs.org/hapi/hoek
+216 verbose request where is https://registry.npmjs.org/hapi/hoek
+217 info trying registry request attempt 1 at 16:54:07
+218 http GET https://registry.npmjs.org/hapi/hoek
+219 verbose request where is /hapi/joi
+220 verbose request registry https://registry.npmjs.org/
+221 verbose url raw /hapi/joi
+222 verbose url resolving [ 'https://registry.npmjs.org/', './hapi/joi' ]
+223 verbose url resolved https://registry.npmjs.org/hapi/joi
+224 verbose request where is https://registry.npmjs.org/hapi/joi
+225 info trying registry request attempt 1 at 16:54:07
+226 http GET https://registry.npmjs.org/hapi/joi
+227 verbose request where is /hapi/wreck
+228 verbose request registry https://registry.npmjs.org/
+229 verbose url raw /hapi/wreck
+230 verbose url resolving [ 'https://registry.npmjs.org/', './hapi/wreck' ]
+231 verbose url resolved https://registry.npmjs.org/hapi/wreck
+232 verbose request where is https://registry.npmjs.org/hapi/wreck
+233 info trying registry request attempt 1 at 16:54:07
+234 http GET https://registry.npmjs.org/hapi/wreck
+235 verbose request where is /date-fns
+236 verbose request registry https://registry.npmjs.org/
+237 verbose url raw /date-fns
+238 verbose url resolving [ 'https://registry.npmjs.org/', './date-fns' ]
+239 verbose url resolved https://registry.npmjs.org/date-fns
+240 verbose request where is https://registry.npmjs.org/date-fns
+241 info trying registry request attempt 1 at 16:54:07
+242 verbose etag W/"ecb173fba2c8c712331dea512d294d11"
+243 http GET https://registry.npmjs.org/date-fns
+244 http 304 https://registry.npmjs.org/date-fns
+245 silly registry.get cb [ 304,
+245 silly registry.get   { date: 'Mon, 10 Feb 2020 15:54:26 GMT',
+245 silly registry.get     connection: 'keep-alive',
+245 silly registry.get     'set-cookie': [ '__cfduid=d1978e9a641277f71d22bf9c6f68429e01581350066; expires=Wed, 11-Mar-20 15:54:26 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+245 silly registry.get     'cf-ray': '562f42f98eacee79-CDG',
+245 silly registry.get     age: '6169',
+245 silly registry.get     'cache-control': 'public, max-age=300',
+245 silly registry.get     etag: '"ecb173fba2c8c712331dea512d294d11"',
+245 silly registry.get     'last-modified': 'Wed, 08 Jan 2020 13:06:37 GMT',
+245 silly registry.get     vary: 'Accept-Encoding',
+245 silly registry.get     'cf-cache-status': 'HIT',
+245 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+245 silly registry.get     server: 'cloudflare' } ]
+246 verbose etag https://registry.npmjs.org/date-fns from cache
+247 http 304 https://registry.npmjs.org/debug
+248 silly registry.get cb [ 304,
+248 silly registry.get   { date: 'Mon, 10 Feb 2020 15:54:26 GMT',
+248 silly registry.get     connection: 'keep-alive',
+248 silly registry.get     'set-cookie': [ '__cfduid=dc3b3944bfb6828bd741f906f60719ba51581350066; expires=Wed, 11-Mar-20 15:54:26 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+248 silly registry.get     'cf-ray': '562f42f97b04cda3-CDG',
+248 silly registry.get     age: '6394',
+248 silly registry.get     'cache-control': 'public, max-age=300',
+248 silly registry.get     etag: '"31caef075876be8ad89cf9586cd2b5d9"',
+248 silly registry.get     'last-modified': 'Fri, 29 Nov 2019 09:32:45 GMT',
+248 silly registry.get     vary: 'Accept-Encoding',
+248 silly registry.get     'cf-cache-status': 'HIT',
+248 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+248 silly registry.get     server: 'cloudflare' } ]
+249 verbose etag https://registry.npmjs.org/debug from cache
+250 http 405 https://registry.npmjs.org/hapi/wreck
+251 silly registry.get cb [ 405,
+251 silly registry.get   { date: 'Mon, 10 Feb 2020 15:54:26 GMT',
+251 silly registry.get     'content-type': 'application/json',
+251 silly registry.get     'content-length': '63',
+251 silly registry.get     connection: 'keep-alive',
+251 silly registry.get     'set-cookie': [ '__cfduid=d33fef0699cf47144981d80385a05a9f71581350066; expires=Wed, 11-Mar-20 15:54:26 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+251 silly registry.get     'cf-ray': '562f42f9783969c2-CDG',
+251 silly registry.get     allow: 'PUT',
+251 silly registry.get     'cf-cache-status': 'DYNAMIC',
+251 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+251 silly registry.get     vary: 'Accept-Encoding',
+251 silly registry.get     server: 'cloudflare' } ]
+252 silly addNameRange number 2 { name: 'date-fns', range: '>=2.9.0-0 <3.0.0-0', hasData: true }
+253 silly addNameRange versions [ 'date-fns',
+253 silly addNameRange   [ '0.1.0',
+253 silly addNameRange     '0.2.0',
+253 silly addNameRange     '0.3.0',
+253 silly addNameRange     '0.4.0',
+253 silly addNameRange     '0.5.0',
+253 silly addNameRange     '0.6.0',
+253 silly addNameRange     '0.7.0',
+253 silly addNameRange     '0.8.0',
+253 silly addNameRange     '0.9.0',
+253 silly addNameRange     '0.10.0',
+253 silly addNameRange     '0.11.0',
+253 silly addNameRange     '0.12.0',
+253 silly addNameRange     '0.12.1',
+253 silly addNameRange     '0.13.0',
+253 silly addNameRange     '0.14.5',
+253 silly addNameRange     '0.14.8',
+253 silly addNameRange     '0.14.9',
+253 silly addNameRange     '0.14.11',
+253 silly addNameRange     '0.15.0',
+253 silly addNameRange     '0.16.0',
+253 silly addNameRange     '0.17.0',
+253 silly addNameRange     '1.0.0-alpha1',
+253 silly addNameRange     '1.0.0-alpha2',
+253 silly addNameRange     '1.0.0-alpha3',
+253 silly addNameRange     '1.0.0-alpha4',
+253 silly addNameRange     '1.0.0-rc1',
+253 silly addNameRange     '1.0.0-rc2',
+253 silly addNameRange     '1.0.0-rc3',
+253 silly addNameRange     '1.0.0-rc4',
+253 silly addNameRange     '1.0.0-rc5',
+253 silly addNameRange     '1.0.0-rc6',
+253 silly addNameRange     '1.0.0-rc8',
+253 silly addNameRange     '1.0.0-rc9',
+253 silly addNameRange     '1.0.0-rc10',
+253 silly addNameRange     '1.0.0-rc11',
+253 silly addNameRange     '1.0.0-rc12',
+253 silly addNameRange     '1.0.0-rc13',
+253 silly addNameRange     '1.0.0-rc14',
+253 silly addNameRange     '1.0.0-rc15',
+253 silly addNameRange     '1.0.0-rc16',
+253 silly addNameRange     '1.0.0-rc17',
+253 silly addNameRange     '1.0.0-rc18',
+253 silly addNameRange     '1.0.0-rc19',
+253 silly addNameRange     '1.0.0-rc21',
+253 silly addNameRange     '1.0.0-rc22',
+253 silly addNameRange     '1.0.0',
+253 silly addNameRange     '1.1.0',
+253 silly addNameRange     '1.1.1',
+253 silly addNameRange     '1.2.0',
+253 silly addNameRange     '1.3.0',
+253 silly addNameRange     '1.4.0',
+253 silly addNameRange     '1.5.0',
+253 silly addNameRange     '1.5.1',
+253 silly addNameRange     '1.5.2',
+253 silly addNameRange     '1.6.0',
+253 silly addNameRange     '1.7.0',
+253 silly addNameRange     '1.8.0',
+253 silly addNameRange     '1.8.1',
+253 silly addNameRange     '1.9.0',
+253 silly addNameRange     '1.10.0',
+253 silly addNameRange     '1.11.0',
+253 silly addNameRange     '1.11.1',
+253 silly addNameRange     '1.11.2',
+253 silly addNameRange     '1.12.0',
+253 silly addNameRange     '1.12.1',
+253 silly addNameRange     '1.13.0',
+253 silly addNameRange     '1.14.0',
+253 silly addNameRange     '1.14.1',
+253 silly addNameRange     '1.15.0',
+253 silly addNameRange     '1.15.1',
+253 silly addNameRange     '1.16.0',
+253 silly addNameRange     '1.17.0',
+253 silly addNameRange     '1.18.0',
+253 silly addNameRange     '1.19.0',
+253 silly addNameRange     '1.20.0',
+253 silly addNameRange     '1.20.1',
+253 silly addNameRange     '1.21.0',
+253 silly addNameRange     '1.21.1',
+253 silly addNameRange     '1.22.0',
+253 silly addNameRange     '1.23.0',
+253 silly addNameRange     '1.24.0',
+253 silly addNameRange     '1.25.0',
+253 silly addNameRange     '1.26.0',
+253 silly addNameRange     '1.27.0',
+253 silly addNameRange     '1.27.1',
+253 silly addNameRange     '1.27.2',
+253 silly addNameRange     '1.28.0',
+253 silly addNameRange     '1.28.1',
+253 silly addNameRange     '1.28.2',
+253 silly addNameRange     '1.28.3',
+253 silly addNameRange     '1.28.4',
+253 silly addNameRange     '1.28.5',
+253 silly addNameRange     '2.0.0-alpha.1',
+253 silly addNameRange     '2.0.0-alpha.2',
+253 silly addNameRange     '2.0.0-alpha.3',
+253 silly addNameRange     '2.0.0-alpha.4',
+253 silly addNameRange     '2.0.0-alpha.5',
+253 silly addNameRange     '2.0.0-alpha.6',
+253 silly addNameRange     '2.0.0-alpha.7',
+253 silly addNameRange     '1.29.0',
+253 silly addNameRange     '2.0.0-alpha.8',
+253 silly addNameRange     '2.0.0-alpha.9',
+253 silly addNameRange     '2.0.0-alpha.10',
+253 silly addNameRange     '2.0.0-alpha.11',
+253 silly addNameRange     '2.0.0-alpha.13',
+253 silly addNameRange     '2.0.0-alpha.14',
+253 silly addNameRange     '2.0.0-alpha.16',
+253 silly addNameRange     '2.0.0-alpha.18',
+253 silly addNameRange     '2.0.0-alpha.20',
+253 silly addNameRange     '2.0.0-alpha.21',
+253 silly addNameRange     '2.0.0-alpha.22',
+253 silly addNameRange     '2.0.0-alpha.23',
+253 silly addNameRange     '2.0.0-alpha.24',
+253 silly addNameRange     '2.0.0-alpha.25',
+253 silly addNameRange     '1.30.1',
+253 silly addNameRange     '2.0.0-alpha.26',
+253 silly addNameRange     '2.0.0-alpha.27',
+253 silly addNameRange     '2.0.0-alpha.28',
+253 silly addNameRange     '2.0.0-alpha.29',
+253 silly addNameRange     '2.0.0-alpha.30',
+253 silly addNameRange     '2.0.0-alpha.31',
+253 silly addNameRange     '2.0.0-alpha.32',
+253 silly addNameRange     '2.0.0-alpha.33',
+253 silly addNameRange     '2.0.0-alpha.34',
+253 silly addNameRange     '2.0.0-alpha.35',
+253 silly addNameRange     '2.0.0-alpha.36',
+253 silly addNameRange     '2.0.0-alpha.37',
+253 silly addNameRange     '2.0.0-beta.1',
+253 silly addNameRange     '2.0.0-beta.2',
+253 silly addNameRange     '2.0.0-beta.3',
+253 silly addNameRange     '2.0.0-beta.4',
+253 silly addNameRange     '2.0.0-beta.5',
+253 silly addNameRange     '2.0.0',
+253 silly addNameRange     '2.0.1',
+253 silly addNameRange     '2.1.0',
+253 silly addNameRange     '2.2.1',
+253 silly addNameRange     '2.3.0',
+253 silly addNameRange     '2.4.0',
+253 silly addNameRange     '2.4.1',
+253 silly addNameRange     '2.5.0',
+253 silly addNameRange     '2.5.1',
+253 silly addNameRange     '2.6.0',
+253 silly addNameRange     '2.7.0',
+253 silly addNameRange     '2.8.0',
+253 silly addNameRange     '2.8.1',
+253 silly addNameRange     '2.9.0' ] ]
+254 verbose addNamed [ 'date-fns', '2.9.0' ]
+255 verbose addNamed [ '2.9.0', '2.9.0' ]
+256 silly lockFile e79052a9-date-fns-2-9-0 date-fns@2.9.0
+257 verbose lock date-fns@2.9.0 /root/.npm/e79052a9-date-fns-2-9-0.lock
+258 silly addNameRange number 2 { name: 'debug', range: '>=4.1.1-0 <5.0.0-0', hasData: true }
+259 silly addNameRange versions [ 'debug',
+259 silly addNameRange   [ '0.0.1',
+259 silly addNameRange     '0.1.0',
+259 silly addNameRange     '0.2.0',
+259 silly addNameRange     '0.3.0',
+259 silly addNameRange     '0.4.0',
+259 silly addNameRange     '0.4.1',
+259 silly addNameRange     '0.5.0',
+259 silly addNameRange     '0.6.0',
+259 silly addNameRange     '0.7.0',
+259 silly addNameRange     '0.7.1',
+259 silly addNameRange     '0.7.2',
+259 silly addNameRange     '0.7.3',
+259 silly addNameRange     '0.7.4',
+259 silly addNameRange     '0.8.0',
+259 silly addNameRange     '0.8.1',
+259 silly addNameRange     '1.0.0',
+259 silly addNameRange     '1.0.1',
+259 silly addNameRange     '1.0.2',
+259 silly addNameRange     '1.0.3',
+259 silly addNameRange     '1.0.4',
+259 silly addNameRange     '2.0.0',
+259 silly addNameRange     '2.1.0',
+259 silly addNameRange     '2.1.1',
+259 silly addNameRange     '2.1.2',
+259 silly addNameRange     '2.1.3',
+259 silly addNameRange     '2.2.0',
+259 silly addNameRange     '2.3.0',
+259 silly addNameRange     '2.3.1',
+259 silly addNameRange     '2.3.2',
+259 silly addNameRange     '2.3.3',
+259 silly addNameRange     '2.4.0',
+259 silly addNameRange     '2.4.1',
+259 silly addNameRange     '2.4.2',
+259 silly addNameRange     '2.4.3',
+259 silly addNameRange     '2.4.4',
+259 silly addNameRange     '2.4.5',
+259 silly addNameRange     '2.5.0',
+259 silly addNameRange     '2.5.1',
+259 silly addNameRange     '2.5.2',
+259 silly addNameRange     '2.6.0',
+259 silly addNameRange     '2.6.1',
+259 silly addNameRange     '2.6.2',
+259 silly addNameRange     '2.6.3',
+259 silly addNameRange     '2.6.4',
+259 silly addNameRange     '2.6.5',
+259 silly addNameRange     '2.6.6',
+259 silly addNameRange     '2.6.7',
+259 silly addNameRange     '2.6.8',
+259 silly addNameRange     '1.0.5',
+259 silly addNameRange     '3.0.0',
+259 silly addNameRange     '3.0.1',
+259 silly addNameRange     '2.6.9',
+259 silly addNameRange     '3.1.0',
+259 silly addNameRange     '3.2.0',
+259 silly addNameRange     '3.2.1',
+259 silly addNameRange     '3.2.2',
+259 silly addNameRange     '3.2.3',
+259 silly addNameRange     '4.0.0',
+259 silly addNameRange     '3.2.4',
+259 silly addNameRange     '3.2.5',
+259 silly addNameRange     '4.0.1',
+259 silly addNameRange     '4.1.0',
+259 silly addNameRange     '3.2.6',
+259 silly addNameRange     '4.1.1' ] ]
+260 verbose addNamed [ 'debug', '4.1.1' ]
+261 verbose addNamed [ '4.1.1', '4.1.1' ]
+262 silly lockFile cfdf5a13-debug-4-1-1 debug@4.1.1
+263 verbose lock debug@4.1.1 /root/.npm/cfdf5a13-debug-4-1-1.lock
+264 silly lockFile 3e80c5a9-hapi-wreck-15-1-0 hapi/wreck@^15.1.0
+265 silly lockFile 3e80c5a9-hapi-wreck-15-1-0 hapi/wreck@^15.1.0
+266 verbose about to build /root/DEV_area_2019/serveur/areaAPI/node_modules/simple-oauth2
+267 verbose node_modules/simple-oauth2 unbuild
+268 info preuninstall simple-oauth2@3.3.0
+269 info uninstall simple-oauth2@3.3.0
+270 silly lockFile e79052a9-date-fns-2-9-0 date-fns@2.9.0
+271 silly lockFile e79052a9-date-fns-2-9-0 date-fns@2.9.0
+272 silly lockFile cfdf5a13-debug-4-1-1 debug@4.1.1
+273 silly lockFile cfdf5a13-debug-4-1-1 debug@4.1.1
+274 verbose true,/root/DEV_area_2019/serveur/areaAPI/node_modules,/root/DEV_area_2019/serveur/areaAPI/node_modules unbuild simple-oauth2@3.3.0
+275 info postuninstall simple-oauth2@3.3.0
+276 silly lockFile 5cebe071-date-fns-2-9-0 date-fns@^2.9.0
+277 silly lockFile 5cebe071-date-fns-2-9-0 date-fns@^2.9.0
+278 silly lockFile a9221a8c-debug-4-1-1 debug@^4.1.1
+279 silly lockFile a9221a8c-debug-4-1-1 debug@^4.1.1
+280 error Error: Method Not Allowed
+280 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+280 error     at /usr/share/npm/lib/cache/add-named.js:203:12
+280 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+280 error     at Object.oncomplete (fs.js:107:15)
+281 error If you need help, you may report this *entire* log,
+281 error including the npm and node versions, at:
+281 error     <http://github.com/npm/npm/issues>
+282 error System Linux 3.16.0-10-amd64
+283 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "dotenv" "simple-oauth2" "--save"
+284 error cwd /root/DEV_area_2019/serveur/areaAPI
+285 error node -v v0.10.29
+286 error npm -v 1.4.21
+287 error code E405
+288 verbose exit [ 1, true ]
